@@ -1,0 +1,38 @@
+{
+    "client":{
+        "log_path" : "./achat_cli.log",
+        "log_level": "DEBUG",
+        "timeout_ms" : 2000,
+        "max_message_len": 80000,
+        "message_len_divided": 800,
+        "checktime_s" : 1
+    },
+
+    "server":{
+        "server_port" : 58771,
+        "server_ip" : "127.0.0.1",
+        "max_connect_num" : 128,
+        "max_send_message" : 100,
+        "max_offline_message":100,
+        "log_path" : "./achat_serv.log",
+        "log_level": "DEBUG",
+        "send_message_timeout_ms": 1000,
+        "checktime_s": 1
+    },
+
+    "master":{
+        "heartbeat_timeout_ms":2000
+    },
+
+    "redis":{
+        "ip":"127.0.0.1",
+        "port":6379,
+        "expire_s":600
+    },
+
+    "mysql":{
+        "ip":"127.0.0.1",
+        "user":"root",
+        "password":"123"
+    }
+}
